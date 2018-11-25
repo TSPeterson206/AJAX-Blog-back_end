@@ -1,0 +1,31 @@
+{
+  "name": "complex_api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "live-server": "^1.2.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.6",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSPeterson206/Complex-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TSPeterson206/Complex-API/issues"
+  },
+  "homepage": "https://github.com/TSPeterson206/Complex-API#readme",
+  "description": ""
+}
