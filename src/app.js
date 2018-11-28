@@ -16,6 +16,7 @@ app.use(function(req, res, next) {
 })
 
 app.use(function(err, req, res, next){
+    console.log(err)
     const error = {}
 
     error.message = err.message || "Internal Server Error"

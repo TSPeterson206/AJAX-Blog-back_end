@@ -23,21 +23,28 @@ function create(newPost) {
 }
 
 function modify(postId, newPost) {
+    console.log(newPost)
     const error = []
     const postidx = posts.findIndex(ele => ele.id === postId)
     if (postidx === -1) {
         error.push('Not Found')
+        return error
     }
 
     const {
         id,
+        title,
         body
     } = newPost
 
     posts[postidx].body = body
+    posts[postidx].title = title
 
     if (!body) {
         error.push("Please add content to post body")
+    }
+    if (!title) {
+        error.push("Please add content to post title")
     }
     if (error.length) return {
         error
